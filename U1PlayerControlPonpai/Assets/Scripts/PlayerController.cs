@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public string inputID;
     public Camera mainCamera;
     public Camera hoodCamera;
     public KeyCode switchKey;
@@ -22,8 +23,8 @@ public class PlayerController : MonoBehaviour
     public float forwardInput;
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        forwardInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal" + inputID);
+        forwardInput = Input.GetAxis("Vertical" + inputID);
         // Moves the car forward based on vertical input
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         // we'll Move the vehicle forward
