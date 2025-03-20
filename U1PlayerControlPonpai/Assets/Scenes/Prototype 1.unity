@@ -1476,6 +1476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 678554789}
   - component: {fileID: 678554788}
+  - component: {fileID: 678554790}
   m_Layer: 0
   m_Name: HoodCamera
   m_TagString: Untagged
@@ -1512,7 +1513,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 0.5
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -1549,6 +1550,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 921040169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &678554790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678554787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7fcdf54a3f99c43b9c610eb576c48e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 921040168}
 --- !u!1001 &700580782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1871,7 +1885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1879,7 +1893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 8.18
       objectReference: {fileID: 0}
     - target: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1972,10 +1986,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca671a9b3970aa4292d9312b775006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputID: 
-  mainCamera: {fileID: 534669904}
+  inputID: 2
+  mainCamera: {fileID: 677958783}
   hoodCamera: {fileID: 678554788}
-  switchKey: 102
+  switchKey: 303
   speed: 20
   turnSpeed: 25
   horizontalInput: 0
@@ -2819,7 +2833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca671a9b3970aa4292d9312b775006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputID: 
+  inputID: 1
   mainCamera: {fileID: 534669904}
   hoodCamera: {fileID: 1950246944}
   switchKey: 102
@@ -4196,11 +4210,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 194810, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_Name
-      value: Vehicle
+      value: Player1
       objectReference: {fileID: 0}
     - target: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_LocalPosition.y
